@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            background-color: honeydew;
+        }
+        div{
+            border: 2px dotted lightpink;
+            margin: 70px 50px;
+            padding: 10px;
+           font-size: larger;
+           font-weight: bold;
+           background-color: azure;
+           color: salmon;
+        }
+        h2{
+            color: lightcoral;
+        }
+        #p1,h2{
+            background: azure;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h2>Project</h2>
+    <p id="p1"></p>
+</div>
+    <script>
+        var i = 0;
+        var text = "";
+        while (i < 10) {
+            text += "The number is" + Math.floor(Math.random() * 100) + "<br>";
+            i++;
+        }
+        document.getElementById("p1").innerHTML = text;
+    </script>
+</body>
+</html>
